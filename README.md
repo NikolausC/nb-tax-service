@@ -10,7 +10,7 @@ This app was built and tested with NodeJS v20, which can be downloaded [here](ht
 1. Start the webserver with `npm start`.
 
 ### Development
-1. Clone this repo and enter its root directory, then run `npm install -D` to install all dependencies.
+1. Clone this repo and enter its root directory, then run `npm install` to install its dependencies.
 1. Run `npm run build-watch` to generate the JavaScript files for the project, and automatically regenerate them when changes are made to the TypeScript source.
 1. With `build-watch` still running, start the webserver in another terminal with `npm run dev`. This will automatically reload when the JS files are rebuilt.
 
