@@ -1,0 +1,29 @@
+{
+  "name": "novabook-code-test",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "An HTTP tax service",
+  "main": "index.js",
+  "scripts": {
+    "build-watch": "tsc --watch --project tsconfig.json",
+    "dev": "nodemon build/index.js",
+    "build": "tsc --project tsconfig.json",
+    "start": "node build/index.js"
+  },
+  "keywords": [],
+  "author": "Alex Cummins",
+  "license": "ISC",
+  "dependencies": {
+    "@sinclair/typebox": "^0.33.11",
+    "fastify": "4.28",
+    "fastify-plugin": "^5.0.0",
+    "pino-pretty": "^11.2.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "nodemon": "^3.1.5",
+    "typescript": "^5.6.2"
+  }
+}

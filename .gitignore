@@ -1,0 +1,4 @@
+node_modules
+transactions.db
+build
+.DS_Store
