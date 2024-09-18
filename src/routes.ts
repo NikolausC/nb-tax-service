@@ -81,7 +81,7 @@ export default async function (fastify: FastifyInstance) {
                 AND date <= ?`, request.query.date);
     
         const taxPosition = taxOwedGbx - taxPaidGbx;
-        request.log.info(`[Tax Position] As of ${date}:\nTotal tax owed: ${taxOwedGbx} GBX\nTax paid: ${taxPaidGbx} GBX\n, Tax position: ${taxPosition}`);
+        request.log.info(`[Tax Position] As of ${date}:\nTotal tax owed: ${taxOwedGbx} GBX\nTax paid: ${taxPaidGbx} GBX\nTax position: ${taxPosition}`);
     
         return reply.send({
             date,
