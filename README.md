@@ -21,7 +21,7 @@ With more time, tests could be added into to the project to provide broader cove
 
 ## Assumptions
 - The two supported values of eventType (SALES and TAX_PAYMENT) must be uppercase strings. Any other casing will be rejected.
-- Sale amendments are treated the same as a sale transaction containing a single item.
+- Item amendments are treated the same as a sale transaction containing a single item, aside from being stored with event type "ITEM_AMENDMENT".
 
 ## Known Issues
 - If data is sent to the transaction endpoint, but it doesn't match either schema (Sales or Tax Payment), the error message may contain information about both schemas.
