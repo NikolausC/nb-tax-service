@@ -1,5 +1,5 @@
 # NB Tax Service
-This service exposes a single-user web API to calculate the user's tax position at any point in time, based on the provided sales (and amendments) and tax transactions. Data persistence is achieved with a single-table SQLite database, which will be created as `transactions.db` in the project root.
+This service exposes a single-user web API to calculate the user's tax position at any point in time, based on the provided sales (and amendments) and tax transactions. Data persistence is achieved with a single-table SQLite database, which will be created as `transactions.db` in the project root. The actions of each request are logged to the terminal output, and all transactions are saved in the database, with amendments being new entries.
 
 ## Setup
 This app was built and tested with NodeJS v20, which can be downloaded [here](https://nodejs.org/en/download/package-manager).
