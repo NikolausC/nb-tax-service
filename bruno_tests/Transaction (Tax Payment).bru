@@ -1,0 +1,19 @@
+meta {
+  name: Transaction (Tax Payment)
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/transactions
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "eventType": "TAX_PAYMENT",
+    "date": "2024-03-01T10:29:30Z",
+    "amount": 123
+  }
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Transaction (Tax Payment - Invalid data)
+  type: http
+  seq: 8
+}
+
+post {
+  url: http://localhost:8080/transactions
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "eventType": "TAX_PAYMENT",
+    "date": "aaa",
+    "amount": "anc"
+  }
+}

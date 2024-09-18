@@ -1,0 +1,31 @@
+meta {
+  name: Transaction (Multiple Sales)
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:8080/transactions
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "eventType": "SALES",
+    "date": "2024-02-22T17:29:39Z",
+    "invoiceId": "3419027d-960f-4e8f-b8b7-f7b2b4791824",
+    "items": [
+      {
+        "itemId": "02db47b6-fe68-4005-a827-24c6e962f3df",
+        "cost": 1099,
+        "taxRate": 0.2
+      },
+          {
+        "itemId": "94dc3d23-6b2a-416d-ace8-882bb08f0c00",
+        "cost": 675,
+        "taxRate": 0.12
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Transaction (Sale - Missing field)
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:8080/transactions
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "eventType": "SALES",
+    "date": "2024-01-03T08:15:00Z",
+    "invoiceId": "f19dcaf8-9235-4d6f-8cab-d17e4f866af4",
+    "items": [
+      {
+        "itemId": "5c1e1868-563b-49fa-ace8-95b0c4622609",
+        "cost": 1099,
+        "taxRate": 0.2
+      }
+    ]
+  }
+}
